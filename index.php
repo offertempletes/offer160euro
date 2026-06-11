@@ -1,6 +1,6 @@
 <?php
 // लाइव Aiven MySQL डेटाबेस कनेक्शन
-$host = '://aivencloud.com';
+$host = '$host = 'mysql-2e50ff84-offer2026.c.aivencloud.com';
 $db   = 'defaultdb';
 $user = 'avnadmin';
 $pass = 'AVNS_ZjA0vSNjm1SuDz-jHys'; // यहाँ स्क्रीन पर आँख वाले आइकॉन पर क्लिक करके अपना पासवर्ड देखकर लिखें
