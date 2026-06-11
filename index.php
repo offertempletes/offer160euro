@@ -12,14 +12,18 @@ try {
 } catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
-// लाइव कीमत (Price List) लाने का लॉजिक
-if (isset($_GET['action']) && $_GET['action'] == 'get_price') {
-    $item = $conn->real_escape_string($_GET['item']);
-    $sql = "SELECT `PRICE_LIST` FROM costing_sheet WHERE `PRODUCT_NAME1` = '$item' LIMIT 1";
-    $result = $conn->query($sql);
-    echo ($result && $result->num_rows > 0) ? $result->fetch_assoc()['PRICE_LIST'] : "0";
-    exit; 
-}
+
+    // लाइव कीमत (Price List) लाने का सुरक्षित लॉजिक (PDO Prepared Statement)
+    if (isset($_GET['action']) && $_GET['action'] == 'get_price') {
+        $item = $_GET['item'];
+        
+        $stmt = $conn->prepare("SELECT `PRICE_LIST` FROM costing_sheet WHERE `PRODUCT_NAME` = :item LIMIT 1");
+        $stmt->execute([':item' => $item]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        echo $row ? $row['PRICE_LIST'] : "0";
+        exit;
+    }
 
 
 // पीडीएफ (PDF) जनरेट करने का बैकएंड लॉजिक
