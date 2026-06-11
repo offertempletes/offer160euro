@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTS Offer</title>
+    <link rel="stylesheet" href="globe.css">
+</head>
+<body>
+    <section class="container">
+        <!--header-->
+        <div class="header">
+            <img src="img/header.png" alt="">
+        </div>
+
+        <!--tableHeding-->
+        <div class="main-section">
+            <div class="main-header">
+                <input  id="odSizeInput" type="search"placeholder = "Type Product Name & Size " oninput="filterTable()">
+            </div>
+            <div class="sub-header">Bill of Materials-Imports [Proposed & Estimated]</div>
+            <table>
+                <thead>
+                    <tr class="table-header">
+                        <th style="width: 5%;">S.No</th>
+                        <th style="width: 45%;">Material</th>
+                        <th style="width: 10%;">Qty</th>
+                        <th style="width: 10%;">Unit</th>                
+                        <th style="width: 15%;">Unit Euro</th>   
+                        <th style="width: 15%;" id="amount-header">Amount in Euro</th>
+                    </tr>
+                </thead>
+                <!--table-->
+                <tbody id="table-body" class="table">
+                    <tr class="category-row">
+                        <td colspan="6">Control System</td><!--subheading-->
+                    </tr>
+
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet - Version 6: Basic - Starter Package (Dongle) License for 10 stations (including blue dongle)">
+                            Control Software TranspoNet Basic
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet - Version 6: Basic - Starter Package License for 10 stations (without blue dongle)">
+                            TranspoNet Version 6 Starter Pacakage License For Every 10 Stations
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>                    
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet - Version 6: Basic - Extension Package License for 10 stations (without blue dongle)">
+                            TranspoNet Version 6 Extension Pacakage License For Every 10 Stations
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>                    
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet - Version 6: Basic - Upgrade Package License for 10 stations (without blue dongle)">
+                            TranspoNet Version 6 Upgrade Pacakage License For Every 10 Stations
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>                
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet Version 6: Advanced Visualisation + reporting">
+                            TranspoNet Version 6 Advanced Visualisation
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>  
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet Version 6: Advanced - Upgrade Package Visualisation + reporting">
+                            TranspoNet Version 6 Advanced Package Visualisation
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>  
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet - Dongle Blue - For replacement Plus licence fee for TranspoNet programs">License Dongle Key [Without License] </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>                    
+                    <tr>  
+                        <td class="s-no"></td>
+                        <td class="item" title="TranspoNet - Communication LanConverter Communication box between T-Control and TranspoNet Devices">
+                            LAN Converter
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>  
+                        <td class="s-no"></td>
+                        <td class="item" title="Hardware - Accessories: Power pack (Standard) 230/110 V / 160 VA / 35 Volt DC in PVC casing, with Voltmeter, IP 65 ">
+                            PowerPack 200Va
+                        </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr class="category-row">
+                        <td colspan="6">Stations</td><!--SubHeadingOfStations-->
+                    </tr>
+                    <tr>       
+                    <td class="s-no"></td>
+                    <td class="item" title="Standard Station - Standard Membrane Panel">
+                        Automatic Top Loading Through Run Station with Membran Panel
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Standard Station - Carrier Management Membrane Panel & Carrier tracking">
+                        Automatic Top Loading Through Run Station with Membran Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>                   
+                    <td class="item" title="Compact Station - Standard Membrane Panel">
+                        Automatic Bottom Loading Compact Station with Membran Panel
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Compact Station - Transport Management Membrane Panel & Carrier tracking (only when sending)">
+                        Automatic Bottom Loading Compact Station with Membran Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Compact Station - Carrier Management Touch Panel & Carrier tracking*">
+                        Automatic Bottom Loading Compact Station with Touch Panel
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Compact Station - Access Management Touch Panel, Carrier tracking* & Access card reader">
+                        Automatic Bottom Loading Compact Station with Touch Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Frontload Station - Standard Membrane Panel">
+                        Front Load Standard Station with Membrane Panel
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Frontload Station - Transport Management Membrane Panel & Carrier tracking (only when sending)">
+                        Front Load Station Transport Management with Membrane Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Frontload Station - Carrier Management Touch Panel & Carrier tracking*">
+                        Front Load Station Carrier Management with Touch Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Frontload Station - SafetyLock Touch Panel & Carrier tracking* & Access card reader & SafetyLock">
+                        Front Load Station SafetyLock with Touch Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Frontload Station - Access Management Touch Panel , Carrier tracking* & Access card reader & lockable cabinet">
+                        Front Load Station Access Management with Touch Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Ultra Station - Carrier Management Touch Panel & Carrier tracking">
+                        Ultra Station Carrier Management with Touch Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Safelog 2 Station (9' Touch panel) Righthand version">
+                        Safelog 2 Station RightHand Version With Touch Panle
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Safelog 2 Station (9' Touch panel) Lefthand version">
+                        Safelog 2 Station LeftHand Version With Touch Panle
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="SafetyLock - Standard Station Carrier lock">
+                        SaftyLock Standard Station with Carrier Lock
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                      
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="SafetyLock - Standard Station Carrier lock & Mifare Card Reader MF-7">
+                        SaftyLock Standard Station with Carrier Lock with Card Reader
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="SafetyLock - Frontload Station Carrier lock">
+                        SaftyLock FrontLoad Station with Carrier Lock
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="OpenLog Light - for Carrier 120x330 & 120x230 Unloading by gravitation only">
+                        OpenLog Light Station For 120 x 330 & 120 x 230 Carrier Unloading
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="OpenLog+ All forms & vacutainer fixation unloading">
+                        OpenLog + Station with Vaccutainer Unloading
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="OpenLog+ All forms unloading ">OpenLog + Station Unloading</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Multi-Send-Station Membrane Panel & Carrier tracking">
+                        MultiSend Station with Membrane Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Multi-Send-Station - Accessories MultiSend: Motor slide Needed for PowerLine operation">
+                        MultiSend Station Motor Slide
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Auto-Send-Station Carrier tracking">AutoSend Station with RFID</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="FlapLog + Receive buffer 1200 mm Membrane Panel & Carrier tracking">
+                        FlapLog + Station with Membrane Panel with RFID
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Laboratory Receiving Station ">Lab Receiving Station</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Motor slide in steel plate case without user panel">Motor Slide Steel Plate without User Panel</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                                                                                                                                                                
+                    <tr class="category-row"><td colspan="6">Line Material</td></tr><!--LineMaterial-->                    
+                    <tr>     
+                    <td class="s-no"></td>
+                    <td class="item" title="3-way Diverter Dim. (WxHxD): 970 x 494 x 394 mm">3-Way Diverter</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="4-way Diverter Dim. (WxHxD): 970 x 494 x 547 mm">4-Way Diverter</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">PVC Grey 800 mmR Bend</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">PVC Grey Sleeves</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">PVC Milky Transparent Straight</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">PVC Milky Transparent 800 mm R Bend</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Forwarding tube - PVC transparent</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Forwarding tube - PVC dark grey</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Forwarding bend - Dark grey, 90°</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Optical Tube Switch (Built-In)</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Control Cable Data-Com-Power Composite</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <!--BlowerUnits-->
+                    
+                    <tr class="category-row"><td colspan="6" id="blower">Blower Units</td></tr>
+                   
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Blower Interface 36 V For blower SD 6/ SD 7 / 1SD 510 / 1SD 710">
+                        Blower Unit Complete Accessories - 2.2 kW,
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Blower Interface 36 V For blower SD 80 / 1SD 810 (4,0 kW)">
+                        Blower Unit Complete with Accessories & attachments - 4 kW,
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Blower Interface 36 V For blower SD8 / 1SD 810 (5,5 kW)">
+                        Blower Unit Complete with Accessories and attachments - 5.5 kW,
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Air switch</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Connection Kit Blower Parts between Air switch and blower - For bower 1SD 510 / 1SD 710 / SD 6">
+                        Connection Kit Blower For  1SD 510 /1SD 710 /SD 6
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Connection Kit Blower Parts between Air switch and blower - For bower 1SD 810 / SD 7 / SD 8 / SD 80">
+                        Connection Kit Blower for 1SD 810 /SD 7 /SD 8 /SD 80
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Connection Kit Carrier damper Parts between Air switch and Carrier damper">Connection Kit Carrier Damper For 1SD 510 / 1SD 710 / SD 6</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Connection Kit Carrier damper Parts between Air switch and Carrier damper">
+                        Connection Kit Carrier Damper For 1SD 810 / SD 7 / SD 8 / SD 80
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Rubber bumper for blower M8 for SD 4 / SD 5 / SD 6">Rubber Bumper for SD 4 / SD 5 / SD 6</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="Rubber bumper for blower M10 for SD 7 / SD 8 / SD 80">Rubber Bumper for SD 7 / SD 8 / SD 80</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Silencer</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Silencer</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+                    </div>
+
+                    <!--Hepa Filter-->
+                    <tr class="category-row"><td colspan="6" id="blower">Hepa Filter</td></tr>
+                   
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="HEPA Filter 1D (Pre-Filter F7 / HEPA-Filter H13) For installation at the station side">
+                        HEPA Filter 1D
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item" title="HEPA Filter 2D (Pre-Filter F7 / HEPA-Filter H13) For installation after the air switch">
+                        HEPA Filter 2D
+                    </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                    
+
+                    <!--Automatic Compact Linear Zone Transfer System-->
+                    <tr class="category-row">
+                        <td colspan="6">Automatic Compact Linear Zone Transfer System</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="zone-unit" class="item">Complete Automatic Linear Zone Transfer Unit Expandable Provision for upto 04 Zones, including installation accessories</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>               
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="zone-unit" class="item">Complete Automatic Linear Zone Transfer Unit Expandable Provision for upto 06 Zones, including installation accessories</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>               
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="zone-unit" class="item">Complete Automatic Linear Zone Transfer Unit Expandable Provision for upto 08 Zones, including installation accessories</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>               
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="zone-unit" class="item">Complete Automatic Linear Zone Transfer Unit Expandable Provision for upto 10 Zones, including installation accessories</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>               
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="zone-unit" class="item">Complete Automatic Linear Zone Transfer Unit Expandable Provision for upto 12 Zones, including installation accessories</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>               
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Standard Zones</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>               
+                    </tr>
+
+                    <td class="s-no"></td>
+                    <td class="item">PowerLine Zone Top</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">PowerLine Zone Bottom</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr> 
+
+                    <tr class="category-row">
+                        <td colspan="6">Diverters Based Zone Transfer Units</td><!--Diverters Based Zone Transfer Units-->
+                    </tr>
+                    <tr>                
+                    <td class="s-no"></td>
+                    <td class="item">Diverter Transfer Unit</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <!--old-->                
+                    <tr>                
+                    <td class="s-no"></td>
+                    <td class="item">Diverter Transfer Unit for 2 Lines </td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>            
+                    <tr class="category-row"><td colspan="6" id="carrier">Carriers</td><!--Carriers-->
+                    </tr>
+
+                    <tr>   
+                    <td class="s-no"></td>
+                    <td class="item">SmartOpen Carrier with size of 330 x 120mm</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Standard Carrier with size of 330 x 120mm</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>
+
+                    
+                    <tr>
+                    <td class="s-no"></td>
+                    <td class="item">Standard Carrier with size of 230 x 120mm</td>
+                    <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                    <td style="text-align: center;">
+                        <select name="" id="">
+                            <option value="">NOS</option>
+                            <option value="">MTRS</option>
+                            <option value="">SET</option>
+                        </select>
+                    </td>                
+                    <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                    <td class="amount-cell">0</td>
+                    </tr>                                          
+
+                        <tr class="grand-total-row">
+                            <td colspan="5">Total as Above Ex Works Germany</td>
+                            <td  class="amount-cell" id="exWorksGermany">0</td>
+                        </tr>                
+                        <tr class="grand-total-row">
+                            <td colspan="5">Packing Charges</td>
+                            <td  class="amount-cell" id="packingCharges">0</td>
+                        </tr>
+
+                        <tr class="grand-total-row">
+                            <td colspan="5">Freight & Insurance Charges</td>
+                            <td  class="amount-cell" id="freightInsurance">0</td>
+                        </tr>
+
+                        <tr class="grand-total-row">
+                            <td colspan="5">Total Amount CIF Indian Sea Port</td>
+                            <td  class="amount" id="cifIndianSeaPort">0</td>
+                        </tr>
+
+                        <tr class="grand-total-row">
+                            <td colspan="5">Estimate Amount in INR</td>
+                            <td class="amount-cell" id="testimateInr"><input type="text" placeholder="Enter Current Euro" style="text-align: right;"></td>
+                        </tr>
+                        
+                        <tr class="grand-total-row">
+                            <td colspan="5">CDCHA Charges</td>
+                            <td  class="amount-cell" id="cdchaCharges">0</td>
+                        </tr> 
+
+                        <tr class="grand-total-row">
+                            <td colspan="5">Total Amount</td>
+                            <td  class="amount-cell" id="finalTotalAmount" itemid="">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--footer-->
+            <div class="footer">
+                <img src="img/footer.png" alt="">
+            </div>
+    </section>  
+        <script src="script.js"></script>
+    </body>
+    </html>

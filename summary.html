@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="globe.css">
+    <title>Proposal Summary</title>
+</head>
+<body>
+    <section class="container">
+        <!--header-->
+        <div class="header">
+            <img src="img/header.png" alt="">
+        </div>
+
+        <!--mainSection-->
+        <div class="main-section">
+            <div class="info-row">
+                <input type="date" id="dateInput">
+                <input type="text" id="refInput" placeholder="Reference">
+            </div>
+
+             <div class="client-details">
+                <input type="text" placeholder="Type Client Name" class="clientName" id="clientName">
+                <input type="text" placeholder="Type Address" class="clientAddress" id="clientAddress">
+            </div>
+
+             <div>
+                <a href="https://img1.wsimg.com/blobby/go/4ea17355-8ef8-4db0-9a84-ea228feccf36/Swisslog%20Pneumatic%20Tube%20System%20Cat%20ver-b180594.pdf"class="heading">
+                    <h4>Proposal for Pneumatic Tube System Swisslog</h4>
+                </a>
+            </div>
+
+             <div class="summary-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">System Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OD Size</td>
+                            <td id="odSize"></td>
+                        </tr>
+                        <tr>
+                            <td>System Control</td>
+                            <td><textarea name="" id="" class="staionslocation">TranspoNet.</textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Stations</td>
+                            <td id="totalStationsCount"></td>
+                        </tr>
+                        <tr>
+                            <td>Blowers</td>
+                            <td id="blowersCount"></td>
+                        </tr>
+                        <tr>
+                            <td>Station Locations</td>
+                            <td><textarea name="" id="" class="staionslocation">Refer to SLD Attached.</textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Basis</td>
+                            <td><textarea name="" id="" class="basis">The above details are based upon tender information provided by the customer.</textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Important Notes -->
+             <div class="notes-section">
+                <h5>Important Notes</h5>
+                <ul>
+                    <li>The Proposed System is based on layout plans provided by the client with <span id="stationsDisplay" class="mid-input"><b>0   </b></span> stations <span class="odDisplay"></span> with <span id="zoneDisplay" class="mid-input"><b>0</b></span> Standard zone.</li><br>
+                    <li>Tube run with OD of<span class="odDisplay"></span> 160mm is capable of transporting carrier with dimensions of                            
+                        <select id="carrier-dimension">
+                            <option value="">--Carrier--</option>
+                            <option value="230 x 120mm">230 x 120mm</option>
+                            <option value="315 x 120mm">315 x 120mm</option>
+                            <option value="330 x 120mm">330 x 120mm</option>
+                            <option value="400 x 120mm">400 x 120mm</option>                            
+                        </select>maximum payload of approx.3.5 kg.</li><br>
+                    <li>Swisslog Control Room (SCR) is required of approx. dimensions 3m (L) x 3m (W) x 3.5m (H).Approx. 6 nos. of Power points UPS backed-up of 6/11A.Swisslog PTS Control Room does not require any special HVAC requirements however
+                        general lighting general ventilation, standard office furniture, EPABX connection, and direct internet connectivity to control PC is provided by the customer.
+                    </li><br>
+                    <li><span id="verbDisplay">There are</span> <span id="blowerscount"><b>0</b></span> Blower in each of the one option, each with maximum power requirement of
+                        <select id="blower-row">
+                            <option value=>--Blower--</option>
+                            <option value="2.2 kW">2.2 kW</option>
+                            <option value="4 kW">4 kW</option>
+                            <option value="5.5 kW">5.5 kW</option>
+                        </select><span class="odDisplay"></span> 50/60Hz 3 Phase 400V.</li><br>
+                    <li>There are no special power requirements for stations and devices,as these work on LVDC.</li><br>
+                    <li><span id="powerPackVerb">There is</span> approximately <span id="powerPackCount"></span> <span id="powerPackText">power pack </span>
+                            proposed in the system to be installed at strategic locations, which will be shown in the detailed drawings.
+                            Power packs are used to strategically boost the LVDC. UPS backed-up 6/11A single phase to be provided by the client for each power pack.
+                    </li><br>
+                    <li>Bill of quantities is only estimated and may change owing to the client’s requirements,actual site conditions and change in routing.</li><br>
+                    <li>Control Software will be provided, however PC with original Windows 10 with standard peripherals and UPS as per specifications that will be provided by the client.
+                        Details will be provided in the labs a horizontal receiving station bend is provided,the platform for this station is to be provided by the customer.
+                    </li><br>
+                    <li>Please refer to assignment of scope and terms and conditions.</li>
+                </ul>
+            </div>
+            <!--footer-->
+            <div class="footer">
+                <img src="img/footer.png" alt="">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globe.css">        
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <img src="img/header.png">
+        </div>
+        <div class="sub-header2">Local Supply (Proposed & Estimate)</div>
+        <div class="main-section">
+            <table>
+                <thead>
+                    <tr class="table-header">
+                        <th style="width:5%;">S.No</th>
+                        <th style="width:45%;">Material</th>
+                        <th style="width:10%;">Qty</th>
+                        <th style="width:10%;">Unit</th>
+                        <th style="width:15%;">Rate</th> 
+                        <th style="width:15%;">Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="inr-table" class="table">
+
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Carrier Basket Stainless Steel Carrier Received Basket">Carrier Basket </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>                    
+                    
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Carrier Rack Stainless Steel Carrier Rack">Carrier Rack </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Basket Upholstery Cushion with upholstery">Basket Upholstery </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Station Directory Printed Directory with Lamination">Station Directory </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Tube Clips GI Tube Clip">Tube Clips </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Tube Clamps SS Tube Clamp">Tube Clamps </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                        <select name="" id="">
+                            <option value="">NOS</option>
+                            <option value="">MTRS</option>
+                            <option value="">SET</option>
+                        </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Tie Strips Zip Ties">Tie Strips</td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Special PVC Glue Special PVC Welding Glue">Special PVC Glue </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Special PVC Cleaner Special PVC Cleaner">Special PVC Cleaner </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>                                                                           
+                        <td class="s-no"></td>
+                        <td class="item" title="Foam Insert">Foam Insert </td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="s-no"></td>
+                        <td class="item" title="Installation Accessories (Thread Rods, Bolts etc...)">Installation Accessories (Thread Rods, Bolts etc...)</td>
+                        <td><input type="text" class="qty" value="" oninput="calculate()" style="text-align: center;"></td>
+                        <td style="text-align: center;">
+                            <select name="" id="">
+                                <option value="">NOS</option>
+                                <option value="">MTRS</option>
+                                <option value="">SET</option>
+                            </select>
+                        </td>
+                        <td><input type="text" class="unit-price" value="" oninput="calculate()" style="text-align: right;"></td>
+                        <td  class="amount-cell">0</td>
+                    </tr>       
+                    <tr class="grand-total-row">
+                        <td colspan="5">Total Amount</td>
+                        <td  class="amount-cell" id="total-page-2">0</td>
+                    </tr>            
+                    <tr class="grand-total-row">
+                        <td colspan="5">Packing & Transportation Charges</td>
+                        <td><input class="qty" type="text" id="PackingTransportationCharges" placeholder="Enter Charges" style="text-align: right;"></td>
+                    </tr>
+                    <tr class="grand-total-row">
+                        <td colspan="5">TOTAL AMOUNT F.O.R. HOSPITAL</td>
+                        <td  class="amount-cell">0</td>
+                    </tr>
+                </tbody>
+            </table><br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+            <table >
+                    <tr>
+                        <td colspan="7" class="description">Description</td>
+                        <td class="description">Amount</td>
+                    </tr>                    
+                    <tr>
+                        <td colspan="7">Installation, Testing & Commissioning Charges upto 24 stations of Swisslog Pneumatic Tube<span class="odDisplay">.</span></td>
+                        <!-- 1. Yahan input-amount id aur calculate() event jodiye -->
+                        <td><input type="text" id="input-amount" oninput="calculate()" placeholder="₹ 0.00" style="text-align: right;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class=""><b>Total Amount</b></td>
+                        <!-- 2. Yahan total-amount id jodiye -->
+                        <td><input type="text" id="total-amount" placeholder="₹ 0.00" style="text-align: right;" readonly></td>
+                    </tr>                                    
+            </table>
+        </div>            
+            <p>
+                The Materials Bill of Quantities is estimated and will be charged for extra per unit rates in event of additional materials required,
+                change in routing, change in locations, site conditions etc… Customs Duty, Govt Levies, GST, Entry Taxes, Customs Clearance & Handling
+                upto Hospital Site will be arranged and paid by the <br> Customer Directly.* GST @ 18% will be charged extra.
+            </p>
+            
+        <div class="footer">
+            <img src="img/footer.png">
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>        
+</body>
+</html> 

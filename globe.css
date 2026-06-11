@@ -1,0 +1,380 @@
+body{
+    background-color: white;
+/*  background-color: #FFB000;*/
+    margin: 0px; 
+    font-family: sans-serif;  
+}
+
+.container{
+    width:210mm;
+    min-height:297mm;
+    margin: 20px auto;
+    background: white;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    overflow:hidden;
+    border: 1px solid;
+    page-break-after:always;
+    break-after:page;
+    box-sizing: border-box;
+
+}
+
+.container p {
+    text-align: center;
+    text-decoration: solid;
+
+}
+
+.header{
+    width:100%;
+    object-fit:contain;
+    display:block;
+    margin: 0px;
+}
+
+.main-img img{
+    width: 100%;
+    height: 230mm;    
+    object-fit:contain;
+    display:block;
+    margin: 0px;
+}
+
+.footer{
+    width:100%;
+    object-fit:contain;
+    display:block;
+    margin: 0px;
+    margin-top: auto;
+}
+
+.header img {
+    width:100%;
+    object-fit:contain;
+    display:block;
+    margin: 0px;
+}
+
+.footer img {
+    width:100%;
+    object-fit:contain;
+    display:block;
+    margin: 0px;
+}
+
+
+/*--Summary--*/
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 13px;
+    margin-left: 11mm;
+}
+
+#dateInput {
+    width: 30mm;
+    background: white; 
+    margin: 0px;       
+}
+
+#refInput {
+    margin: 0px;
+    margin-right: 5mm;
+    font-size: 13px;
+    width: 35vh;
+    background: white;
+}
+
+.client-details {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 2.6;
+    margin-left: 11mm;
+    width: 30vh;
+    background: white;
+}
+
+.heading {
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+h4 {
+    margin-left: 11mm;
+}
+
+.summary-table {
+    border-collapse: collapse;
+    margin-left: 11mm;
+    background: white;
+}
+
+textarea {
+    width: 110mm;
+    height: 35px;
+    border-style: none;
+    overflow: hidden;
+    font-family: sans-serif;
+    background: white;
+}
+
+.staionslocation {
+    width: 40mm;
+    height: 20px;
+    border-style: none;
+    font-family: sans-serif;
+    background: white;
+}
+
+.summary-table{
+    width: 150mm;
+
+}
+.summary-table th{
+    padding: 3px;
+    text-align: left;
+    width: 40mm;
+}
+
+.summary-table th{
+    text-align: center;
+}
+
+.notes-section {
+    text-align: justify;
+    margin-right: 10mm;
+    
+}
+
+.notes-section li {
+    line-height: 20px;
+}
+
+.notes-section h5 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.notes-section ul {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+input {
+    border: none;
+    font-family: sans-serif;
+    font-size: inherit;
+    width: 100%;
+    background: transparent;
+}
+
+select {
+    border: none !important;            /* चारों तरफ का बॉक्स बॉर्डर हटाया */
+    background: transparent !important;   /* बैकग्राउंड का सफ़ेद रंग हटाया */
+    font-family: inherit;
+    font-size: 12px;
+    color: inherit;
+    padding: 0 5px;
+    cursor: pointer;
+    outline: none;
+    width: auto;
+}
+
+/*--index--*/
+
+.main-header {
+    background-color: #f8cbad;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.main-header input{
+    background-color: #f8cbad;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #f8cbad;
+    width: 250px;
+    border-radius: 2px;
+}
+
+.sub-header {
+    background-color: white;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.sub-header2 {
+    background-color: #f8cbad;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 4px 8px;
+    font-size: 11px;    
+}
+
+.amount-cell{
+    text-align: right;
+}
+
+.table-header {
+    background-color: #f8cbad;
+    font-weight: bold;
+}
+
+.table-header select{
+    border: none !important;
+    background-color: #f8cbad;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: bold ;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    appearance: none;
+    cursor: pointer;
+}
+
+.table select{
+    border: none !important;
+    padding: 4px 8px;
+    font-size: 11px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    appearance: none;
+    cursor: pointer;
+} 
+
+.category-row {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.grand-total-row {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/*---assignment----*/
+
+.scope-table th{
+    text-align: center;
+    font-size: 15px;
+}
+
+.scope-table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.scope-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #ff0000 !important;
+    transform: scale(1.2);
+    margin: auto;
+}
+
+.textarea-1 ,
+.textarea-3,
+.textarea-11,
+.textarea-17{
+    width: 150mm;
+    height: 6mm;
+    border-radius: none;
+    overflow: hidden;
+    vertical-align: middle;
+
+}
+
+.textarea-2,
+.textarea-4,
+.textarea-9,
+.textarea-15{
+    width: 150mm;
+    height: 14mm;
+    border-radius: none;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.textarea-5,
+.textarea-13{
+    width: 150mm;
+    height: 20mm;
+    border-radius: none;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.textarea-6,
+.textarea-10,
+.textarea-12,
+.textarea-16{
+    width: 150mm;
+    height: 25mm;
+    border-radius: none;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.textarea-7,
+.textarea-8,
+.textarea-14{
+    width: 150mm;
+    height: 15mm;
+    border-radius: none;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.textarea-16{
+    width: 150mm;
+    height: 35mm;
+    border-radius: none;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.btn-wrapper{
+    text-align: center;
+}
+
+.description{
+    background-color: yellow;
+    font-weight: bold;    
+}
+
+/*--Indexpage---*/
+
+#infoBox {
+      position: absolute;  /* position relative to parent */
+      bottom: 170px;        /* distance from bottom */
+      right: 50px;         /* distance from right */
+      background: white;
+      border: 1px solid #ccc;
+      width: 350px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+      border-radius: 5px;
+      border-color: gray;
+      line-height: 1.2px;
+  }
