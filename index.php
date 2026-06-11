@@ -1,8 +1,17 @@
 <?php
-// 1. डेटाबेस कनेक्शन और बैकएंड लॉजिक (आपका पुराना काम करने वाला कोड)
-$conn = new mysqli("localhost", "root", "", "offer_db");
-$conn->set_charset("utf8");
+// लाइव Aiven MySQL डेटाबेस कनेक्शन
+$host = '://aivencloud.com';
+$db   = 'defaultdb';
+$user = 'avnadmin';
+$pass = 'AVNS_ZjA0vSNjm1SuDz-jHys'; // यहाँ स्क्रीन पर आँख वाले आइकॉन पर क्लिक करके अपना पासवर्ड देखकर लिखें
+$port = '25466';
 
+try {
+    $conn = new PDO("mysql:host=$host;port=$port;dbname=$db;charset=utf8", $user, $pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
 // लाइव कीमत (Price List) लाने का लॉजिक
 if (isset($_GET['action']) && $_GET['action'] == 'get_price') {
     $item = $conn->real_escape_string($_GET['item']);
@@ -231,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             fetch('', { // खाली स्ट्रिंग का मतलब है इसी मौजूदा PHP फाइल पर रिक्वेस्ट भेजना
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },   
                 body: formData.toString()
             })
             .then(response => {
